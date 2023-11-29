@@ -76,17 +76,41 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>	
+				
+					
+				<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
 					<image>
 						<builder>paketobuildpacks/builder-jammy-base:latest</builder>
 					</image>
-					<excludes>
-						<exclude>
-							<groupId>org.projectlombok</groupId>
-							<artifactId>lombok</artifactId>
-						</exclude>
-					</excludes>
+					<source>1.8</source>
+					<target>1.8</target>
 				</configuration>
+				</plugin>	
+				<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>0.8.8</version>
+				
+				<executions>
+					   <execution>
+						    <id>prepare-agent</id>
+						    <goals>
+							     <goal>prepare-agent</goal>
+						    </goals>
+					   </execution>
+					   <execution>
+						    <id>report</id>
+						    <goals>
+							     <goal>report</goal>
+						     </goals>
+					    </execution>
+				</executions>
+				 </plugin>
+			
 			</plugin>
 		</plugins>
 	</build>
