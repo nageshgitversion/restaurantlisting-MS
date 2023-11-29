@@ -1,0 +1,19 @@
+eureka:
+   client:
+     service-url:
+       defaultZone: http://localhost:8761/eureka/
+
+spring:
+  datasource:
+    
+    password: Nag@15199
+    url: jdbc:mysql://localhost:3306/user
+    username: root
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true

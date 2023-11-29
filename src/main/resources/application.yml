@@ -1,0 +1,23 @@
+
+server:
+  port: 9091
+spring:
+#  security:
+#     user:
+#       name: nagesh
+#       password: nagesh
+  application:
+     name: USER-SERVICE
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  profiles:
+    active: local
+    
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
