@@ -6,9 +6,9 @@ eureka:
 spring:
   datasource:
     
-    password: Nag@15199
-    url: jdbc:mysql://localhost:3306/user
-    username: root
+    password: Nag15188
+    url: jdbc:mysql://mynewdb.ct91asccasgf.eu-west-2.rds.amazonaws.com:3306/student
+    username: admin
   jpa:
     generate-ddl: true
     hibernate:
