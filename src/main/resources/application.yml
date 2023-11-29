@@ -11,7 +11,7 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
   profiles:
-    active: dev
+    active: local
     
   jpa:
     generate-ddl: true
