@@ -20,6 +20,7 @@ public class User {
 	private String userName;
 	private String city;
 	private String password;
+	private String name;
 	
 	
 	public Integer getUserId() {
